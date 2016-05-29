@@ -85,6 +85,11 @@
 }
 /* Navbar Top Styles */
 
+.responsive-image {
+		width: 800px;
+		height: 400px;
+}
+
 .navbar-top-links {
     margin-right: 0;
 }
@@ -189,4 +194,15 @@
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
+}
+
+@media(max-width:758px) {
+	#wrapper.toggled #page-content-wrapper {
+		position: absolute;
+		margin-right: -250px;
+	}
+	.responsive-image {
+		width: 400px;
+		height: 200px;
+	}
 }

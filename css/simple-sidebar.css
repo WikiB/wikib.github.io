@@ -196,7 +196,22 @@
     background: none;
 }
 
+.positioner {
+}
+
 @media(max-width:767px) {
+	.navbar {
+		position: relative;
+	}
+	.navbar-header {
+		position: fixed;
+	}
+	.navbar-top-links {
+		position: fixed;
+	}
+	.positioner {
+		position: absolute;
+	}
 	#wrapper.toggled {
     		padding-left: 155px;
 	}
@@ -210,9 +225,6 @@
 	}
 	#sidebar-wrapper {
 		position: absolute;
-	}
-	.navbar-top-links {
-		position: fixed;
 	}
 	#wrapper.toggled #sidebar-wrapper {
 		width: 155px;

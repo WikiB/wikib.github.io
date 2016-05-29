@@ -212,7 +212,7 @@
 		position: absolute;
 	}
 	.navbar-top-links {
-		position: relative;
+		position: fixed;
 	}
 	#wrapper.toggled #sidebar-wrapper {
 		width: 155px;

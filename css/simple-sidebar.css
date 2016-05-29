@@ -196,10 +196,13 @@
     background: none;
 }
 
-@media(max-width:758px) {
+@media(max-width:767px) {
 	#wrapper.toggled #page-content-wrapper {
 		position: absolute;
 		margin-right: -250px;
+	}
+	#wrapper.toggled #sidebar-wrapper {
+    width: 160px;
 	}
 	.responsive-image {
 		width: 200px;

@@ -211,6 +211,9 @@
 	#sidebar-wrapper {
 		position: absolute;
 	}
+	.navbar-top-links {
+		position: relative;
+	}
 	#wrapper.toggled #sidebar-wrapper {
 		width: 155px;
 	}

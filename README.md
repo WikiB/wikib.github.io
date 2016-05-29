@@ -1,7 +1,5 @@
 # [WikiB](http://wikib.github.io/)
 
- [Website] created by [Martin Starkov](google.com).
-
 ## Bugs and Issues
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/WikiB/wikib.github.io/issues) here on GitHub or leave a comment on the [website](http://wikib.github.io/).

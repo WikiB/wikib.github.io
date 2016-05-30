@@ -31,7 +31,8 @@
 
 <body>
         <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+	<div id="customnav">
+	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -252,7 +253,8 @@
             </ul>
             <!-- /.navbar-top-links -->
 	</nav>
-
+	</div>
+	
 	<div id="wrapper">
 
         <!-- Sidebar -->
@@ -331,10 +333,14 @@
                         <p>Hey there!</p>
 						<p>Welcome to the first version of the WikiB website. So far we've made this cool sidebar template that allows you to click the buttons and see a menu appear on the left-hand side of the screen. Also note how the text wraps around the side as you press the button or resize the menu.</p>
 						<a class="btn btn-default" id="menu-toggle-chemistry">Toggle Chemistry</a>
-						<a class="btn btn-default" id="menu-toggle-physics">Toggle Physics</a><br><br>
-						<img src="resources/earth.jpg" class="responsive-image"></img>
-                        <p><h4>And what do you call projects like these? <code id="visibility">Awesome</code> <a class="btn btn-default" id="visibility-toggle">Press Me</a></h4></p>
-                    </div>
+						<a class="btn btn-default" id="menu-toggle-physics">Toggle Physics</a>
+					</div>
+					<div class="col-lg-12">
+						<img src="resources/earth.jpg" align="left" class="responsive-image"></img>
+					</div>
+					<div class="col-lg-12">
+					And what do you call projects like these? <code id="visibility">Awesome</code> <a class="btn btn-default" id="visibility-toggle">Press Me</a>
+					</div>
                 </div>
             </div>
         </div>
@@ -354,6 +360,13 @@
 	
     <!-- Menu Toggle Scripts -->
     <script>
+	function set_body_height() { // set body height = window height
+		$('body').height($(window).height());
+	}
+		$(document).ready(function() {
+		$(window).bind('resize', set_body_height);
+			set_body_height();
+	});
     $("#menu-toggle-chemistry").click(function() {
 		if ($("#wrapper").is("#wrapper.toggled")) {
 			if ($("#chemistryvisibility").is("#chemistryvisibility.toggled")) {

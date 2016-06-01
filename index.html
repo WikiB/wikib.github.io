@@ -9,23 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home</title>
+    <title>WikiB</title>
+	
+	<link rel="icon" href="resources/home_tab_icon.png">
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 	
 	<!-- Custom Fonts -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -42,10 +37,35 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand">WikiB</a>
             </div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav"> <!--Header-->
+				<li class="active"><h1 style="padding-left:15px;">WikiB</h1></li> 
+			</ul>
+			<ul class="nav navbar-nav pull-right"> <!--Navbar List-->
+				<li class="active"><a><h3>Home</h3></a></li> <!--Home-->
+				<li><a href="/EducationalWebsite.github.io/about_us/main.html"><h3>About Us</h3></a></li> <!--About Us-->
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><h3>Subjects <b class="caret"></b></h3></a> <!--Subjects-->
+					<ul class="dropdown-menu dropdown-menu-left">
+						<li><a href="/EducationalWebsite.github.io/mathematics/main.html"><h4><i class="fa fa-area-chart"></i> Mathematics</h4></a></li>
+						<li><a href="/EducationalWebsite.github.io/physics/main.html"><h4><i class="fa fa-magnet"></i> Physics</h4></a></li>
+						<li><a href="/EducationalWebsite.github.io/chemistry/main.html"><h4><i class="fa fa-flask"></i> Chemistry</h4></a></li>
+						<li><a href="/EducationalWebsite.github.io/biology/main.html"><h4><i class="fa fa-heartbeat"></i> Biology</h4></a></li>
+						<li><a href="/EducationalWebsite.github.io/english/main.html"><h4><i class="fa fa-flag"></i> English</h4></a></li>
+						<li><a href="/EducationalWebsite.github.io/finnish/main.html"><h4><i class="fa fa-file"></i> Finnish</h4></a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><h3>Others <b class="caret"></b></h3></a> <!--Others-->
+					<ul class="dropdown-menu dropdown-menu-left">
+						<li><a href="/EducationalWebsite.github.io/contact/main.html"><h4><i class="fa fa-inbox"></i> Contact</h4></a></li>
+						<li><a href="/EducationalWebsite.github.io/astronomy/main.html"><h4><i class="fa fa-star-half-o"></i> Astronomy</h4></a></li>
+						<li><a href="/EducationalWebsite.github.io/contribute/main.html"><h4><i class="fa fa-upload"></i> Contribute</h4></a></li>
+					</ul>
+				</li>
+			</ul>
+			</div>
             <!-- /.navbar-header -->
-            <ul class="nav navbar-top-links navbar-right">
+            <!--<ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -94,9 +114,8 @@
                             </a>
                         </li>
                     </ul>
-                    <!-- /.dropdown-messages -->
                 </li>
-                <!-- /.dropdown -->
+
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -173,9 +192,8 @@
                             </a>
                         </li>
                     </ul>
-                    <!-- /.dropdown-tasks -->
                 </li>
-                <!-- /.dropdown -->
+
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -233,9 +251,8 @@
                             </a>
                         </li>
                     </ul>
-                    <!-- /.dropdown-alerts -->
                 </li>
-                <!-- /.dropdown -->
+
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -249,9 +266,8 @@
                         <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
-                    <!-- /.dropdown-user -->
                 </li>
-                <!-- /.dropdown -->
+
             </ul>
             <!-- /.navbar-top-links -->
 	</nav>

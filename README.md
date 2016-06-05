@@ -13,4 +13,4 @@ WikiB was created by and is maintained by **Martin Starkov**
 
 ## Copyright and License
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/WikiB/wikib.github.io/LICENSE) license.
+Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/WikiB/wikib.github.io/blob/master/LICENSE) license.

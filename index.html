@@ -1,431 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>WikiB</title>
-	
-	<link rel="icon" href="resources/home_tab_icon.png">
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet">
-	
-	<!-- Custom Fonts -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-</head>
-
-<body>
-	
-	<div id="wrapper">
-	<div id="customsize">
-        <!-- Navigation -->
-	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-			<div class="collapse navbar-collapse" id="navbar-collapse">
-			<ul class="nav navbar-nav"> <!--Header-->
-				<li class="active"><h1 style="padding-left:15px;">WikiB</h1></li> 
-			</ul>
-			<ul class="nav navbar-nav pull-right"> <!--Navbar List-->
-				<li class="active"><a><h3>Home</h3></a></li> <!--Home-->
-				<li><a href="/EducationalWebsite.github.io/about_us/main.html"><h3>About Us</h3></a></li> <!--About Us-->
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><h3>Subjects <b class="caret"></b></h3></a> <!--Subjects-->
-					<ul class="dropdown-menu dropdown-menu-left">
-						<li><a href="/EducationalWebsite.github.io/mathematics/main.html"><h4><i class="fa fa-area-chart"></i> Mathematics</h4></a></li>
-						<li><a href="/EducationalWebsite.github.io/physics/main.html"><h4><i class="fa fa-magnet"></i> Physics</h4></a></li>
-						<li><a href="/EducationalWebsite.github.io/chemistry/main.html"><h4><i class="fa fa-flask"></i> Chemistry</h4></a></li>
-						<li><a href="/EducationalWebsite.github.io/biology/main.html"><h4><i class="fa fa-heartbeat"></i> Biology</h4></a></li>
-						<li><a href="/EducationalWebsite.github.io/english/main.html"><h4><i class="fa fa-flag"></i> English</h4></a></li>
-						<li><a href="/EducationalWebsite.github.io/finnish/main.html"><h4><i class="fa fa-file"></i> Finnish</h4></a></li>
-					</ul>
-				</li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><h3>Others <b class="caret"></b></h3></a> <!--Others-->
-					<ul class="dropdown-menu dropdown-menu-left">
-						<li><a href="/EducationalWebsite.github.io/contact/main.html"><h4><i class="fa fa-inbox"></i> Contact</h4></a></li>
-						<li><a href="/EducationalWebsite.github.io/astronomy/main.html"><h4><i class="fa fa-star-half-o"></i> Astronomy</h4></a></li>
-						<li><a href="/EducationalWebsite.github.io/contribute/main.html"><h4><i class="fa fa-upload"></i> Contribute</h4></a></li>
-					</ul>
-				</li>
-			</ul>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WikiB</title>
+		<link rel="icon" href="resources/home_tab_icon.png">
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/custom.css" rel="stylesheet">
+		<!-- Style CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		<!-- Custom Fonts -->
+		<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="mobilesize">
+				<!-- Navigation -->
+				<nav class="navbar">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#" style="background-color:#ffffff;color:#000000;font-family:'Source Sans Pro', Calibri, Candara, Arial, sans-serif;">
+								<h1 style="margin-bottom:0px;margin-top:0px;">WikiB</h1>
+							</a>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active extra3">
+									<a href="#">
+										<h3 style="margin-bottom:0px;margin-top:0px;">Home</h3>
+										<span class="sr-only">(current)</span>
+									</a>
+								</li>
+								<li class="extra3">
+									<a href="#">
+										<h3 style="margin-bottom:0px;margin-top:0px;">About Us</h3>
+									</a>
+								</li>
+								<li class="dropdown extra3">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<h3 style="margin-bottom:0px;margin-top:0px;">Subjects <span class="caret"></span></h3>
+									</a>
+									<ul class="dropdown-menu pull-left">
+										<li><a href="#"><i class="fa fa-area-chart"></i> Mathematics</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#"><i class="fa fa-magnet"></i> Physics</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#"><i class="fa fa-flask"></i> Chemistry</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#"><i class="fa fa-heartbeat"></i> Biology</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#"><i class="fa fa-flag"></i> English</a></li>
+									</ul>
+								</li>
+								<!--<li class="extra3"><a href="#"><h3 style="margin-bottom:0px;margin-top:0px;">Link</h3></a></li>-->
+								<li class="dropdown extra15">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<h3 style="margin-bottom:0px;margin-top:0px;">Options <span class="caret"></span></h3>
+									</a>
+									<ul class="dropdown-menu pull-left">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+				</nav>
 			</div>
-            <!-- /.navbar-header -->
-            <!--<ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-messages">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>Martin Starkov</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Added support for toggleable vision.</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>Martin Starkov</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Templates of a few basic topics in Chemistry and Physics tabs.</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>Martin Starkov</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>27th of May</em>
-                                    </span>
-                                </div>
-                                <div>Started on tab functions. Fixed pressing both buttons.</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>Read All Messages [WIP]</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-tasks">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Biology Chapters</strong>
-                                        <span class="pull-right text-muted">40% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                            <span class="sr-only">40% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Physics Chapters</strong>
-                                        <span class="pull-right text-muted">30% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                                            <span class="sr-only">30% Complete</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Chemistry Chapters</strong>
-                                        <span class="pull-right text-muted">60% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                            <span class="sr-only">60% Complete (warning)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Miscellaneous</strong>
-                                        <span class="pull-right text-muted">80% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                            <span class="sr-only">80% Complete (danger)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>See All Tasks</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-comment fa-fw"></i> Forums [WIP]
-                                    <span class="pull-right text-muted small">Working on it</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> Friendship System
-                                    <span class="pull-right text-muted small">In the future</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> Messaging [WIP]
-                                    <span class="pull-right text-muted small">Hopefully soon</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-tasks fa-fw"></i> Task System
-                                    <span class="pull-right text-muted small">Underway</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-upload fa-fw"></i> Server Reebot
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>See All Alerts</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Profile [WIP]</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings [WIP]</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
-            <!-- /.navbar-top-links -->
-	</nav>
-	</div>
-	
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav" id="physicsvisibility">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Physics
-                    </a>
-                </li>
-				<li>
-                    <a href="#">Introduction</a>
-                </li>
-                <li>
-                    <a href="#">Basics</a>
-                </li>
-                <li>
-                    <a href="#">Thermodynamics</a>
-                </li>
-                <li>
-                    <a href="#">Quantum Mechanics</a>
-                </li>
-				<li>
-                    <a href="#">Applications</a>
-                </li>
-                <li>
-                    <a href="#">History</a>
-                </li>
-                <li>
-                    <a href="#">Useful Values</a>
-                </li>
-                <li>
-                    <a href="#">Formula Booklet</a>
-                </li>
-            </ul>
-			<ul class="sidebar-nav" id="chemistryvisibility">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Chemistry
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Introduction</a>
-                </li>
-                <li>
-                    <a href="#">Chemicals</a>
-                </li>
-                <li>
-                    <a href="#">Organic Chemistry</a>
-                </li>
-                <li>
-                    <a href="#">Concepts</a>
-                </li>
-                <li>
-                    <a href="#">Chemical Reactions</a>
-                </li>
-                <li>
-                    <a href="#">Periodic Table</a>
-                </li>
-                <li>
-                    <a href="#">Value Table</a>
-                </li>
-				<li>
-                    <a href="#">Formula Booklet</a>
-                </li>
-            </ul>
+			<!-- Sidebar -->
+			<div id="sidebar-wrapper">
+				<ul class="sidebar-nav" id="physicsvisibility">
+					<li class="sidebar-brand">
+						<a href="#">
+						Physics
+						</a>
+					</li>
+					<li>
+						<a href="#">Introduction</a>
+					</li>
+					<li>
+						<a href="#">Basics</a>
+					</li>
+					<li>
+						<a href="#">Thermodynamics</a>
+					</li>
+					<li>
+						<a href="#">Quantum Mechanics</a>
+					</li>
+					<li>
+						<a href="#">Applications</a>
+					</li>
+					<li>
+						<a href="#">History</a>
+					</li>
+					<li>
+						<a href="#">Useful Values</a>
+					</li>
+					<li>
+						<a href="#">Formula Booklet</a>
+					</li>
+				</ul>
+				<ul class="sidebar-nav" id="chemistryvisibility">
+					<li class="sidebar-brand">
+						<a href="#">
+						Chemistry
+						</a>
+					</li>
+					<li>
+						<a href="#">Introduction</a>
+					</li>
+					<li>
+						<a href="#">Chemicals</a>
+					</li>
+					<li>
+						<a href="#">Organic Chemistry</a>
+					</li>
+					<li>
+						<a href="#">Concepts</a>
+					</li>
+					<li>
+						<a href="#">Chemical Reactions</a>
+					</li>
+					<li>
+						<a href="#">Periodic Table</a>
+					</li>
+					<li>
+						<a href="#">Value Table</a>
+					</li>
+					<li>
+						<a href="#">Formula Booklet</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /#sidebar-wrapper -->
+			<!-- Page Content -->
+			<div id="page-content-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1>WikiB</h1>
+							<p>Hey there!</p>
+							<p>Welcome to the first version of the WikiB website. So far we've made this cool sidebar template that allows you to click the buttons and see a menu appear on the left-hand side of the screen. Also note how the text wraps around the side as you press the button or resize the menu.</p>
+							<a class="btn btn-default" id="menu-toggle-chemistry">Toggle Chemistry</a>
+							<a class="btn btn-default" id="menu-toggle-physics">Toggle Physics</a>
+						</div>
+						<div class="col-lg-12">
+							<img src="resources/earth.jpg" align="left" alt="" class="responsive-image"/>
+						</div>
+						<div class="col-lg-12">
+							And what do you call projects like these? <br><code id="visibility">Awesome</code> <a class="btn btn-default" id="visibility-toggle">Press Me</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /#page-content-wrapper -->
 		</div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>WikiB</h1>
-                        <p>Hey there!</p>
-						<p>Welcome to the first version of the WikiB website. So far we've made this cool sidebar template that allows you to click the buttons and see a menu appear on the left-hand side of the screen. Also note how the text wraps around the side as you press the button or resize the menu.</p>
-						<a class="btn btn-default" id="menu-toggle-chemistry">Toggle Chemistry</a>
-						<a class="btn btn-default" id="menu-toggle-physics">Toggle Physics</a>
-					</div>
-					<div class="col-lg-12">
-						<img src="resources/earth.jpg" align="left" class="responsive-image"></img>
-					</div>
-					<div class="col-lg-12">
-					And what do you call projects like these? <br><code id="visibility">Awesome</code> <a class="btn btn-default" id="visibility-toggle">Press Me</a>
-					</div>
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-	</div>
-    <!-- /#wrapper -->
-	
-	<!-- Custom JavaScript -->
-    <script src="js/custom.js"></script>
-	
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-	
-    <!-- Menu Toggle Scripts -->
-    <script>
-	function set_body_height() { // set body height = window height
-		$('body').height($(window).height());
-	}
-		$(document).ready(function() {
-		$(window).bind('resize', set_body_height);
-			set_body_height();
-	});
-    $("#menu-toggle-chemistry").click(function() {
-		if ($("#wrapper").is("#wrapper.toggled")) {
-			if ($("#chemistryvisibility").is("#chemistryvisibility.toggled")) {
-			$("#wrapper").toggleClass("toggled");
-			$("#chemistryvisibility").toggleClass("toggled");
-			} else if ($("#physicsvisibility").is("#physicsvisibility.toggled")) {
-			$("#physicsvisibility").toggleClass("toggled");
-			$("#chemistryvisibility").toggleClass("toggled");
-			} else {
-			$("#wrapper").toggleClass("toggled");
-			$("#chemistryvisibility").toggleClass("toggled");
-			}	
-		} else {
-			$("#wrapper").toggleClass("toggled");
-			$("#chemistryvisibility").toggleClass("toggled");
-		}
-    });
-	$("#menu-toggle-physics").click(function() {
-		if ($("#wrapper").is("#wrapper.toggled")) {
-			if ($("#physicsvisibility").is("#physicsvisibility.toggled")) {
-			$("#wrapper").toggleClass("toggled");
-			$("#physicsvisibility").toggleClass("toggled");
-			} else if ($("#chemistryvisibility").is("#chemistryvisibility.toggled")) {
-			$("#chemistryvisibility").toggleClass("toggled");
-			$("#physicsvisibility").toggleClass("toggled");
-			} else {
-			$("#wrapper").toggleClass("toggled");
-			$("#physicsvisibility").toggleClass("toggled");
-			}	
-		} else {
-			$("#wrapper").toggleClass("toggled");
-			$("#physicsvisibility").toggleClass("toggled");
-		}
-    });
-	$("#menu-toggle").click(function(e) {
-		e.preventDefault();
-		$("#wrapper").toggleClass("toggled");
-    });
-	$("#visibility-toggle").click(function(e) {
-		e.preventDefault();
-		$("#visibility").toggleClass("toggled");
-    });
-    </script>
-
-</body>
-
+		<!-- /#wrapper -->
+		<!-- Custom JavaScript -->
+		<script src="js/custom.js"></script>
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.js"></script>
+		<!-- Menu Toggle Scripts -->
+		<script>
+			function set_body_height() { // set body height = window height
+				$('body').height($(window).height());
+			}
+				$(document).ready(function() {
+				$(window).bind('resize', set_body_height);
+					set_body_height();
+			});
+			   $("#menu-toggle-chemistry").click(function() {
+				if ($("#wrapper").is("#wrapper.toggled")) {
+					if ($("#chemistryvisibility").is("#chemistryvisibility.toggled")) {
+					$("#wrapper").toggleClass("toggled");
+					$("#chemistryvisibility").toggleClass("toggled");
+					} else if ($("#physicsvisibility").is("#physicsvisibility.toggled")) {
+					$("#physicsvisibility").toggleClass("toggled");
+					$("#chemistryvisibility").toggleClass("toggled");
+					} else {
+					$("#wrapper").toggleClass("toggled");
+					$("#chemistryvisibility").toggleClass("toggled");
+					}	
+				} else {
+					$("#wrapper").toggleClass("toggled");
+					$("#chemistryvisibility").toggleClass("toggled");
+				}
+			   });
+			$("#menu-toggle-physics").click(function() {
+				if ($("#wrapper").is("#wrapper.toggled")) {
+					if ($("#physicsvisibility").is("#physicsvisibility.toggled")) {
+					$("#wrapper").toggleClass("toggled");
+					$("#physicsvisibility").toggleClass("toggled");
+					} else if ($("#chemistryvisibility").is("#chemistryvisibility.toggled")) {
+					$("#chemistryvisibility").toggleClass("toggled");
+					$("#physicsvisibility").toggleClass("toggled");
+					} else {
+					$("#wrapper").toggleClass("toggled");
+					$("#physicsvisibility").toggleClass("toggled");
+					}	
+				} else {
+					$("#wrapper").toggleClass("toggled");
+					$("#physicsvisibility").toggleClass("toggled");
+				}
+			   });
+			$("#menu-toggle").click(function(e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
+			   });
+			$("#visibility-toggle").click(function(e) {
+				e.preventDefault();
+				$("#visibility").toggleClass("toggled");
+			   });
+			   
+		</script>
+	</body>
 </html>

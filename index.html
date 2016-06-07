@@ -29,51 +29,51 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="#" style="background-color:#ffffff;color:#000000;font-family:'Source Sans Pro', Calibri, Candara, Arial, sans-serif;">
-								<h1 style="margin-bottom:0px;margin-top:0px;">WikiB</h1>
-							</a>
+							<div class="navbar-brand" style="font-family:'Source Sans Pro', Calibri, Candara, Arial, sans-serif;">
+								<a class="textdec" style="background-color:#ffffff;color:#000000;">
+									<h1 style="margin-bottom:0px;margin-top:0px;"><span data-href="#">WikiB</span></h1>
+								</a>
+							</div>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="navbar-collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li class="active extra3">
-									<a href="#">
-										<h3 style="margin-bottom:0px;margin-top:0px;"><i class="fa fa-home"></i> Home</h3>
-										<span class="sr-only">(current)</span>
+									<a>
+										<h3 style="margin-bottom:0px;margin-top:0px;"><i class="fa fa-home"></i><span data-href="#"> Home</span><span class="sr-only">(current)</span></h3>
 									</a>
 								</li>
 								<li class="extra3">
-									<a href="#">
-										<h3 style="margin-bottom:0px;margin-top:0px;"><i class="fa fa-user"></i> About Us</h3>
+									<a>
+										<h3 style="margin-bottom:0px;margin-top:0px;"><i class="fa fa-user"></i><span data-href="#"> About Us</span></h3>
 									</a>
 								</li>
 								<li class="dropdown extra3">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-										<h3 style="margin-bottom:0px;margin-top:0px;"><i class="fa fa-institution"></i> Subjects <span class="caret"></span></h3>
+									<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<h3 style="margin-bottom:0px;margin-top:0px;"><i class="fa fa-institution"></i><span data-href="#"> Subjects </span><span class="caret"></span></h3>
 									</a>
 									<ul class="dropdown-menu pull-left">
-										<li id="menu-toggle-mathematics"><a href="#" id="testing" data-target="#navbar-collapse" data-toggle="collapse"><i class="fa fa-area-chart"></i> Mathematics</a></li>
+										<li id="menu-toggle-mathematics"><a><i class="fa fa-area-chart"></i><span data-href="#"> Mathematics</span></a></li>
 										<li role="separator" class="divider"></li>
-										<li id="menu-toggle-physics"><a href="#" id="testing" data-target="#navbar-collapse" data-toggle="collapse"><i class="fa fa-magnet"></i> Physics</a></li>
+										<li id="menu-toggle-physics"><a><i class="fa fa-magnet"></i><span data-href="#"> Physics</span></a></li>
 										<li role="separator" class="divider"></li>
-										<li id="menu-toggle-chemistry"><a href="#" id="testing" data-target="#navbar-collapse" data-toggle="collapse"><i class="fa fa-flask"></i> Chemistry</a></li>
+										<li id="menu-toggle-chemistry"><a><i class="fa fa-flask"></i><span data-href="#"> Chemistry</span></a></li>
 										<li role="separator" class="divider"></li>
-										<li id="menu-toggle-biology"><a href="#" id="testing" data-target="#navbar-collapse" data-toggle="collapse"><i class="fa fa-heartbeat"></i> Biology</a></li>
+										<li id="menu-toggle-biology"><a><i class="fa fa-heartbeat"></i><span data-href="#"> Biology</span></a></li>
 										<li role="separator" class="divider"></li>
-										<li id="menu-toggle-english"><a href="#" id="testing" data-target="#navbar-collapse" data-toggle="collapse"><i class="fa fa-flag"></i> English</a></li>
+										<li id="menu-toggle-english"><a><i class="fa fa-flag"></i><span data-href="#"> English</span></a></li>
 									</ul>
 								</li>
-								<!--<li class="extra3"><a href="#"><h3 style="margin-bottom:0px;margin-top:0px;">Link</h3></a></li>-->
 								<li class="dropdown extra15">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-										<h3 style="margin-bottom:0px;margin-top:0px;"><i class="fa fa-cog"></i> Others <span class="caret"></span></h3>
+									<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<h3 style="margin-bottom:0px;margin-top:0px;"><i class="fa fa-cog"></i><span data-href="#"> Others </span><span class="caret"></span></h3>
 									</a>
 									<ul class="dropdown-menu pull-left">
-										<li><a href="#"><i class="fa fa-inbox"></i> Contact</a></li>
+										<li><a><i class="fa fa-inbox"></i><span data-href="#"> Contact</span></a></li>
 										<li role="separator" class="divider"></li>
-										<li><a href="#"><i class="fa fa-upload"></i> Contribute</a></li>
+										<li><a><i class="fa fa-upload"></i><span data-href="#"> Contribute</span></a></li>
 										<li role="separator" class="divider"></li>
-										<li><a href="#"><i class="fa fa-star-half-o"></i> Astronomy</a></li>
+										<li><a><i class="fa fa-star-half-o"></i><span data-href="#"> Astronomy</span></a></li>
 									</ul>
 								</li>
 							</ul>
@@ -90,168 +90,232 @@
 						Physics
 					</li>
 					<li>
-						<a href="#">Introduction</a>
+						<a class="active"><span data-href="#">Introduction</span></a>
 					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							Topics <span class="caret"></span>
-						</a>
+					<li class="dropdown keep-open size70" id="topmenu1">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#"><span data-href="#">
+						Topic 1: Measurements and uncertainties <span class="caret"></span>
+						</span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Topic 1</a></li>
+							<li><a class="size70"><span data-href="#">1.1 - Measurements in physics</span></a></li>
 							<li role="separator" class="minidivider"></li>
-							<li><a href="#">Topic 2</a></li>
+							<li><a class="size70"><span data-href="#">1.2 - Uncertainties and errors</span></a></li>
 							<li role="separator" class="minidivider"></li>
-							<li><a href="#">Topic 3</a></li>
+							<li><a class="size70"><span data-href="#">1.3 - Vectors and scalars</span></a></li>
+						</ul>
+					</li>
+					<li class="dropdown keep-open size70" id="topmenu2">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#"><span data-href="#">
+						Topic 2: Mechanics <span class="caret"></span>
+						</span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a class="size70"><span data-href="#">2.1 - Motion</span></a></li>
 							<li role="separator" class="minidivider"></li>
-							<li><a href="#">Topic 4</a></li>
+							<li><a class="size70"><span data-href="#">2.2 - Forces</span></a></li>
 							<li role="separator" class="minidivider"></li>
-							<li><a href="#">Topic 5</a></li>
+							<li><a class="size70"><span data-href="#">2.3 - Work, energy and power</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">2.4 - Momentum and impulse</span></a></li>
+						</ul>
+					</li>
+					<li class="dropdown keep-open size70" id="topmenu3">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#"><span data-href="#">
+						Topic 3: Thermal physics <span class="caret"></span>
+						</span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a class="size70"><span data-href="#">3.1 - Thermal concepts</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">3.2 - Modelling a gas</span></a></li>
+						</ul>
+					</li>
+					<li class="dropdown keep-open size70" id="topmenu4">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#"><span data-href="#">
+						Topic 4: Waves <span class="caret"></span>
+						</span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a class="size70"><span data-href="#">4.1 - Oscillations</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">4.2 - Travelling waves</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">4.3 - Wave characteristics</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">4.4 - Wave behaviour</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">4.5 - Standing waves</span></a></li>
+						</ul>
+					</li>
+					<li class="dropdown keep-open size70" id="topmenu5">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#"><span data-href="#">
+						Topic 5: Electricity and magnetism <span class="caret"></span>
+						</span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a class="size70"><span data-href="#">5.1 - Electric fields</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">5.2 - Heating effect of electric currents</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">5.3 - Electric cells</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">5.4 - Magnetic effects of electric currents</span></a></li>
+						</ul>
+					</li>
+					<li class="dropdown keep-open size70" id="topmenu6">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#"><span data-href="#">
+						Topic 6: Circular motion and gravitation <span class="caret"></span>
+						</span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a class="size70"><span data-href="#">6.1 - Circular motion</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">6.2 - Newton's law of gravitation</span></a></li>
+						</ul>
+					</li>
+					<li class="dropdown keep-open size70" id="topmenu7">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" style="text-indent: 8px;"><span data-href="#">
+						Topic 7: Atomic, nuclear and particle phys. <span style="margin-left: 0px;" class="caret"></span>
+						</span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a class="size70"><span data-href="#">7.1 - Discrete energy and radioactivity</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">7.2 - Nuclear reactions</span></a></li>
+							<li role="separator" class="minidivider"></li>
+							<li><a class="size70"><span data-href="#">7.3 - The structure of matter</span></a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="#">Basics</a>
+						<a><span data-href="#">Basics</span></a>
 					</li>
 					<li>
-						<a href="#">Thermodynamics</a>
+						<a><span data-href="#">Thermodynamics</span></a>
 					</li>
 					<li>
-						<a href="#">Quantum Mechanics</a>
+						<a><span data-href="#">Quantum Mechanics</span></a>
 					</li>
 					<li>
-						<a href="#">Applications</a>
+						<a><span data-href="#">Applications</span></a>
 					</li>
 					<li>
-						<a href="#">History</a>
+						<a><span data-href="#">History</span></a>
 					</li>
 					<li>
-						<a href="#">Useful Values</a>
+						<a><span data-href="#">Useful Values</span></a>
 					</li>
 					<li>
-						<a href="#">Formula Booklet</a>
+						<a><span data-href="#">Formula Booklet</span></a>
 					</li>
 				</ul>
 				<ul class="sidebar-nav" id="chemistryvisibility">
 					<li class="sidebar-brand">
-						<a href="#">
 						Chemistry
-						</a>
 					</li>
 					<li>
-						<a href="#">Introduction</a>
+						<a><span data-href="#">Introduction</span></a>
 					</li>
 					<li>
-						<a href="#">Chemicals</a>
+						<a><span data-href="#">Chemicals</span></a>
 					</li>
 					<li>
-						<a href="#">Organic Chemistry</a>
+						<a><span data-href="#">Organic Chemistry</span></a>
 					</li>
 					<li>
-						<a href="#">Concepts</a>
+						<a><span data-href="#">Concepts</span></a>
 					</li>
 					<li>
-						<a href="#">Chemical Reactions</a>
+						<a><span data-href="#">Chemical Reactions</span></a>
 					</li>
 					<li>
-						<a href="#">Periodic Table</a>
+						<a><span data-href="#">Periodic Table</span></a>
 					</li>
 					<li>
-						<a href="#">Value Table</a>
+						<a><span data-href="#">Value Table</span></a>
 					</li>
 					<li>
-						<a href="#">Formula Booklet</a>
+						<a><span data-href="#">Formula Booklet</span></a>
 					</li>
 				</ul>
 				<ul class="sidebar-nav" id="biologyvisibility">
 					<li class="sidebar-brand">
-						<a href="#">
 						Biology
-						</a>
 					</li>
 					<li>
-						<a href="#">Introduction</a>
+						<a><span data-href="#">Introduction</span></a>
 					</li>
 					<li>
-						<a href="#">Cells</a>
+						<a><span data-href="#">Cells</span></a>
 					</li>
 					<li>
-						<a href="#">Organic Biology</a>
+						<a><span data-href="#">Organic Biology</span></a>
 					</li>
 					<li>
-						<a href="#">Concepts</a>
+						<a><span data-href="#">Concepts</span></a>
 					</li>
 					<li>
-						<a href="#">Enzymic Reactions</a>
+						<a><span data-href="#">Enzymic Reactions</span></a>
 					</li>
 					<li>
-						<a href="#">Table of terminology</a>
+						<a><span data-href="#">Table of terminology</span></a>
 					</li>
 					<li>
-						<a href="#">Values</a>
+						<a><span data-href="#">Values</span></a>
 					</li>
 					<li>
-						<a href="#">Formula Booklet</a>
+						<a><span data-href="#">Formula Booklet</span></a>
 					</li>
 				</ul>
 				<ul class="sidebar-nav" id="mathematicsvisibility">
 					<li class="sidebar-brand">
-						<a href="#">
 						Mathematics
-						</a>
 					</li>
 					<li>
-						<a href="#">Introduction</a>
+						<a><span data-href="#">Introduction</span></a>
 					</li>
 					<li>
-						<a href="#">Basics</a>
+						<a><span data-href="#">Basics</span></a>
 					</li>
 					<li>
-						<a href="#">Applied Mathematics</a>
+						<a><span data-href="#">Applied Mathematics</span></a>
 					</li>
 					<li>
-						<a href="#">Concepts</a>
+						<a><span data-href="#">Concepts</span></a>
 					</li>
 					<li>
-						<a href="#">Proof</a>
+						<a><span data-href="#">Proof</span></a>
 					</li>
 					<li>
-						<a href="#">History</a>
+						<a><span data-href="#">History</span></a>
 					</li>
 					<li>
-						<a href="#">Problems</a>
+						<a><span data-href="#">Problems</span></a>
 					</li>
 					<li>
-						<a href="#">Formula Booklet</a>
+						<a><span data-href="#">Formula Booklet</span></a>
 					</li>
 				</ul>
 				<ul class="sidebar-nav" id="englishvisibility">
 					<li class="sidebar-brand">
-						<a href="#">
 						English
-						</a>
 					</li>
 					<li>
-						<a href="#">Introduction</a>
+						<a><span data-href="#">Introduction</span></a>
 					</li>
 					<li>
-						<a href="#">Texts</a>
+						<a><span data-href="#">Texts</span></a>
 					</li>
 					<li>
-						<a href="#">Poems</a>
+						<a><span data-href="#">Poems</span></a>
 					</li>
 					<li>
-						<a href="#">Analysis</a>
+						<a><span data-href="#">Analysis</span></a>
 					</li>
 					<li>
-						<a href="#">Themes</a>
+						<a><span data-href="#">Themes</span></a>
 					</li>
 					<li>
-						<a href="#">Book List</a>
+						<a><span data-href="#">Book List</span></a>
 					</li>
 					<li>
-						<a href="#">Useful Links</a>
+						<a><span data-href="#">Useful Links</span></a>
 					</li>
 					<li>
-						<a href="#">Due Dates</a>
+						<a><span data-href="#">Due Dates</span></a>
 					</li>
 				</ul>
 			</div>
@@ -285,16 +349,29 @@
 		<script src="js/bootstrap.js"></script>
 		<!-- Menu Toggle Scripts -->
 		<script>
-			$(document).ready(function() {
-			$(window).resize(function() {
-				if($(window).width() >= 767) {
-					$('#testing').removeAttr('data-toggle');
-				} else {
-					$('#testing').addAttr('data-toggle', 'collapse');
-				}
-			}).resize();
+			var aTags = document.querySelectorAll('span[data-href]');
+			
+			for(var i = 0; i < aTags.length; i++){
+			var aTag = aTags[i];
+			aTag.addEventListener('click', function(e){
+				var ele = e.target;
+				window.location.replace(ele.getAttribute('data-href'));
 			});
-		
+			}
+			$('.dropdown.keep-open').on({
+				"shown.bs.dropdown": function() { this.closable = false; },
+				"click":             function() { this.closable = true; },
+				"hide.bs.dropdown":  function() { return this.closable; }
+			});
+			
+			/*$(window).resize(function() {
+				if($(window).width() >= 767) {
+					$('#resize0').removeAttribute('data-toggle');
+				} else {
+					$('#resize0').setAttribute('data-toggle', 'collapse');
+				}
+			}).resize();*/
+			
 			function set_body_height() { // set body height = window height
 				$('body').height($(window).height());
 			}
@@ -327,6 +404,51 @@
 			});
 			$("#menu-toggle-physics").click(function() {
 				if ($("#wrapper").is("#wrapper.toggled")) {
+						if ($("#topmenu1").hasClass("open") ) {
+							$('#topmenu1').removeClass('open');
+						}
+						if ($("#topmenu2").hasClass("open") ) {
+							$('#topmenu2').removeClass('open');
+						}
+						if ($("#topmenu3").hasClass("open") ) {
+							$('#topmenu3').removeClass('open');
+						}
+						if ($("#topmenu4").hasClass("open") ) {
+							$('#topmenu4').removeClass('open');
+						}
+						if ($("#topmenu5").hasClass("open") ) {
+							$('#topmenu5').removeClass('open');
+						}
+						if ($("#topmenu6").hasClass("open") ) {
+							$('#topmenu6').removeClass('open');
+						}
+						if ($("#topmenu7").hasClass("open") ) {
+							$('#topmenu7').removeClass('open');
+						}
+						if ($("#topmenu8").hasClass("open") ) {
+							$('#topmenu8').removeClass('open');
+						}
+						if ($("#topmenu9").hasClass("open") ) {
+							$('#topmenu9').removeClass('open');
+						}
+						if ($("#topmenu10").hasClass("open") ) {
+							$('#topmenu10').removeClass('open');
+						}
+						if ($("#topmenu11").hasClass("open") ) {
+							$('#topmenu11').removeClass('open');
+						}
+						if ($("#topmenu12").hasClass("open") ) {
+							$('#topmenu12').removeClass('open');
+						}
+						if ($("#topmenu13").hasClass("open") ) {
+							$('#topmenu13').removeClass('open');
+						}
+						if ($("#topmenu14").hasClass("open") ) {
+							$('#topmenu14').removeClass('open');
+						}
+						if ($("#topmenu15").hasClass("open") ) {
+							$('#topmenu15').removeClass('open');
+						}
 					if ($("#physicsvisibility").is("#physicsvisibility.toggled")) {
 					$("#wrapper").toggleClass("toggled");
 					$("#physicsvisibility").toggleClass("toggled");

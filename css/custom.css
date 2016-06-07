@@ -11,22 +11,22 @@ html {
     transition: all 0.5s ease;
 }
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 267px;
 }
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 267px;
 }
 #wrapper.toggled #page-content-wrapper {
     position: relative;
-    margin-right: -250px;
+    margin-right: -267px;
 }
 #sidebar-wrapper {
     z-index: 500;
     position: absolute;
-    left: 250px;
+    left: 267px;
     width: 0;
     height: 100%;
-    margin-left: -250px;
+    margin-left: -267px;
     overflow-y: auto;
     background: #EFEFEF;
     -webkit-transition: all 0.5s ease;
@@ -155,6 +155,13 @@ h6,
 .navbar-brand {
     line-height: 44px;
 }
+.textdec {
+    text-decoration: none;
+}
+.textdec:hover,
+.textdec:focus {
+    text-decoration: none;
+}
 .navbar {
     border-bottom: 1px solid #cccccc;
 }
@@ -275,12 +282,46 @@ body {
     right: 0;
     left: auto;
 }
+span[data-href]{
+    cursor:pointer;
+}
+a {
+    cursor:pointer;
+}
+a:active,
+a:hover {
+    outline: 0;
+}
+span {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+span:active,
+span:hover {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
 /* Sidebar Styles */
+.collapser-test {
+	display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+}
 
 .sidebar-nav {
+	overflow-y: auto;
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 267px;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -288,42 +329,55 @@ body {
 	background-color: #EFEFEF;
 }
 .sidebar-nav li {
-    text-indent: 20px;
+    text-indent: 10px;
     line-height: 40px;
 	overflow: auto;
 }
 .sidebar-nav li a {
+	border-bottom: 1px solid #cccccc;
     display: block;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
 }
+.sidebar-nav > li > .active,
+.sidebar-nav > li > .active:hover,
+.sidebar-nav > li > .active:focus,
+.sidebar-nav > li > .active:active,
+.sidebar-nav > li > .active:target {
+    background-color: #262626;
+	color: #ffffff;
+	border-bottom: 0;
+}
+.sidebar-nav > li > .active:hover {
+    background: rgba(0, 0, 0, 0.8);
+	color: #ffffff;
+	border-bottom: 0;
+}
 .sidebar-nav li a:hover {
+	border-bottom: 1px solid #cccccc;
     text-decoration: none;
     color: #fff;
     background: rgba(0, 0, 0, 0.8);
 }
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
+	border-bottom: 1px solid #cccccc;
     text-decoration: none;
 }
 .sidebar-nav > .sidebar-brand {
+	background-color: #DBDBDB;
     height: 65px;
     font-size: 18px;
     line-height: 64px;
 	border-bottom: 1px solid #cccccc;
 }
 .sidebar-nav > .sidebar-brand:hover {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.8);
 }
 .sidebar-nav > .sidebar-brand a {
-    color: #000000;
-}
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #000000;
-    background: rgba(255, 255, 255, 0.1);
 }
 .sidebar-nav > .dropdown > .dropdown-menu {
+	border-bottom: 1px solid #cccccc;
+	border-top: 0;
     width: 100%;
 	position: relative;
 	border-left: 0px;
@@ -333,6 +387,7 @@ body {
 	padding-bottom: 0px;
 }
 .sidebar-nav > .dropdown > .dropdown-menu > li > a {
+	border-bottom: 0;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
@@ -349,8 +404,11 @@ body {
 }
 #wrapper.toggled #mobilesize {
     transition: all 0.5s ease;
-    width: calc( 100% + 250px);
-    margin-left: calc( 0px - 250px);
+    width: calc( 100% + 267px);
+    margin-left: calc( 0px - 267px);
+}
+.size70 {
+	font-size: 70%;
 }
 @media(max-width:767px) {
     #mobilesize {
@@ -359,17 +417,17 @@ body {
     }
     #wrapper.toggled #mobilesize {
         transition: all 0.5s ease;
-        width: calc( 100% + 380px);
-        margin-left: calc( 0px - 190px);
+        width: calc( 100% + 534px);
+        margin-left: calc( 0px - 267px);
     }
     #wrapper.toggled {
-        padding-left: 190px;
+        padding-left: 267px;
     }
     #wrapper.toggled #sidebar-wrapper {
-        width: 190px;
+        width: 267px;
     }
 	.sidebar-nav {
-    width: 190px;
+    width: 267px;
 	}
     #wrapper.toggled #page-content-wrapper {
         position: absolute;
@@ -417,5 +475,8 @@ body {
     .extra3 {
         padding-right: 0px;
     }
+	.size70 {
+	font-size: 60%;
+	}
 	
 }
